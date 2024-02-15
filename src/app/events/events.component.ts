@@ -24,8 +24,6 @@ export class EventsComponent implements OnInit {
   constructor(private eventsService: EventsService, private fb: FormBuilder) {}
 
   ngOnInit(): void {
-    this.eventsService.getEvents().subscribe((events) => console.log(events));
-
     this.countries = this.eventsService.getCountries();
 
     this.events$ = this.eventsService.getEvents().pipe(take(1));
@@ -47,9 +45,11 @@ export class EventsComponent implements OnInit {
     const val = this.form.value;
 
     const start =
-      DateTime.fromISO(val.startDateTime).toUTC().toISO()?.slice(0, -5)+'Z' || '';
+      DateTime.fromISO(val.startDateTime).toUTC().toISO()?.slice(0, -5) + 'Z' ||
+      '';
     const end =
-      DateTime.fromISO(val.endDateTime).toUTC().toISO()?.slice(0, -5) +'Z'|| '';
+      DateTime.fromISO(val.endDateTime).toUTC().toISO()?.slice(0, -5) + 'Z' ||
+      '';
 
     this.events$ = this.eventsService
       .getEvents({
