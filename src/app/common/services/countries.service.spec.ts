@@ -13,4 +13,11 @@ describe('CountriesService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('getCountries should work', () => {
+    const countries = service.getCountries();
+    expect(countries.length).toEqual(250);
+    expect(countries.find((country) => country.value === 'US')).toBeTruthy();
+    expect(countries[0].value).toEqual('AF')
+  });
 });

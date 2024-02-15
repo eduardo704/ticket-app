@@ -4,6 +4,7 @@ import { EventsComponent } from './events.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EventsService } from './events.service';
 import { of } from 'rxjs';
+import { EventCardListComponent } from './event-card-list/event-card-list.component';
 
 describe('EventsComponent', () => {
   let component: EventsComponent;
@@ -12,7 +13,7 @@ describe('EventsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [EventsComponent],
-      imports: [ReactiveFormsModule],
+      imports: [ReactiveFormsModule, EventCardListComponent],
       providers: [
         {
           provide: EventsService,

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { EventCardComponent } from '../event-card/event-card.component';
 import { CommonModule } from '@angular/common';
+import { MappedEvent } from '../events.model';
 
 @Component({
   selector: 'app-event-card-list',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './event-card-list.component.scss',
 })
 export class EventCardListComponent {
-  @Input() events: any[];
+  @Input() events: MappedEvent[];
 }

@@ -1,11 +1,11 @@
-import { Observable, Subscription, take } from 'rxjs';
-import { EventsService } from './events.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Event, Start } from './events.model';
-import { Country } from './country.model';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { DateTime } from 'luxon';
+import { Observable, Subscription, take } from 'rxjs';
 import { CountriesService } from '../common/services/countries.service';
+import { Country } from './country.model';
+import { MappedEvent } from './events.model';
+import { EventsService } from './events.service';
 
 @Component({
   selector: 'app-events',
@@ -13,7 +13,7 @@ import { CountriesService } from '../common/services/countries.service';
   styleUrl: './events.component.scss',
 })
 export class EventsComponent implements OnInit, OnDestroy {
-  events$: Observable<Event[]>;
+  events$: Observable<MappedEvent[]>;
   countries: Country[];
   form: FormGroup;
 
