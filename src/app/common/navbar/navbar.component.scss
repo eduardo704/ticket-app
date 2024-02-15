@@ -1,0 +1,16 @@
+.main-navbar {
+  color: #4f46e5;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  box-shadow: rgb(226, 232, 240);
+  font-weight: bold;
+  font-size: 15px;
+  .nav-container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  }
+  background-color: white;
+  height: 50px;
+}

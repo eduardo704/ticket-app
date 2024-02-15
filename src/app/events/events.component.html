@@ -4,42 +4,42 @@
       <form (ngSubmit)="submit()" class="filters-form" [formGroup]="form">
         <div>
           <label for="country" list="europe-countries">Country:</label>
-          <select formControlName="countryCode" type="text" name="country" >
+          <select formControlName="countryCode" type="text" name="country">
             <option value=""></option>
-            <option *ngFor="let country of countries" [value]="country.value">{{country.label}}</option>
+            <option *ngFor="let country of countries" [value]="country.value">
+              {{ country.label }}
+            </option>
           </select>
         </div>
 
         <div>
           <label for="city">City:</label>
-          <input formControlName="city" type="text" name="city" id="">
+          <input formControlName="city" type="text" name="city" id="" />
         </div>
         <div>
           <label for="start">Start:</label>
-          <input [min]="fromMin" [max]="fromMax" formControlName="startDateTime" type="date">
+          <input
+            [min]="fromMin"
+            [max]="fromMax"
+            placeholder="start"
+            formControlName="startDateTime"
+            type="date"
+          />
         </div>
         <div>
           <label for="end">End:</label>
-          <input [min]="endMin" formControlName="endDateTime" type="date">
+          <input [min]="endMin" formControlName="endDateTime" type="date" />
         </div>
         <div>
           <button type="submit">Search</button>
         </div>
       </form>
     </div>
-    <div class="card-container">
+    <app-event-card-list [events]="events$ | async"></app-event-card-list>
+    <!-- <div class="card-container">
       <div *ngFor="let item of events$ | async as event">
-        <div class="card">
-          <div class="header">
-            <img class="card-image" [src]="item.images[0].url" alt="Event image">
-          </div>
-          <div class="body">
-            <div class="title">{{ item.name }}</div>
-            <div>Starting: {{ item.dates.start.dateTime | date }}</div>
-            <div>Venue: {{ item._embedded.venues[0].name }}</div>
-          </div>
-        </div>
+        <app-event-card [item]="item"></app-event-card>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

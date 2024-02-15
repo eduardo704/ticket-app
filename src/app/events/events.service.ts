@@ -21,15 +21,5 @@ export class EventsService {
       }));
   }
 
-  getCountries():Country[]{
-    const formattedCountries = countries.map((country) => ({
-      value: country.cca2,
-      label: country.name.common,
-      flag: country.flag,
-      region: country.region,
-    })).sort((a,b)=>a.label.localeCompare(b.label))
 
-    return formattedCountries;
-
-  }
 }

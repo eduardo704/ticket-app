@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="header">
+    <img class="card-image" [src]="item.images[0].url" alt="Event image">
+  </div>
+  <div class="body">
+    <div class="title">{{ item.name }}</div>
+    <div>{{ item.dates.start.dateTime | date: 'medium' }}</div>
+    <div>{{ item._embedded.venues[0].name }}</div>
+  </div>
+</div>

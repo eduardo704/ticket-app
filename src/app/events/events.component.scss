@@ -1,52 +1,27 @@
 .container {
-  .filters{
+  .filters {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    .filters-form{
+    .filters-form {
       display: flex;
-      gap: 5rem;
-      label{
+      column-gap: 3rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 1rem;
+      label {
         margin-right: 1rem;
       }
-      button{
+      button {
         padding: 5px 10px;
         cursor: pointer;
         border: none;
         color: white;
         background-color: #4f46e5;
-        &:hover{
+        &:hover {
           background-color: rgb(31, 19, 94);
         }
       }
     }
   }
-  .card-container {
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    .card {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      cursor: pointer;
 
-      .card-image {
-        aspect-ratio: 16 / 9;
-        width: 100%;
-      }
-      .body {
-        padding-top:  5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .title{
-          font-weight: bold;
-          font-size: 18px;
-          padding-bottom: 4px;
-          color: #4f46e5;
-        }
-      }
-    }
-  }
 }

@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { EventCardListComponent } from './event-card-list/event-card-list.component';
 import { EventsRoutingModule } from './events-routing.module';
 import { EventsComponent } from './events.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     EventsRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    EventCardListComponent
   ]
 })
 export class EventsModule { }
