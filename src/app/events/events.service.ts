@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { EventResponse } from './events.model';
 import { map } from 'rxjs';
-import countries from 'world-countries';
-import { Country } from './country.model';
+import { EventResponse } from './events.model';
 
 @Injectable({
   providedIn: 'root',

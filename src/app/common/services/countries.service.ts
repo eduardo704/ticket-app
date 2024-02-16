@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import countries from 'world-countries';
 import { Country } from '../../events/country.model';
+import { countries } from './countries';
 
 @Injectable({
   providedIn: 'root',
