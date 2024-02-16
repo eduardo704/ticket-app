@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ticket-app-7a725"
+  },
+  "targets": {
+    "ticket-app-7a725": {
+      "hosting": {
+        "ticket-app": [
+          "ticket-app-7a725"
+        ]
+      }
+    }
+  }
+}

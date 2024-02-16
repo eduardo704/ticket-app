@@ -39,12 +39,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -106,6 +101,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ticket-app:build:production",
+              "serveTarget": "ticket-app:serve:production"
+            },
+            "development": {
+              "buildTarget": "ticket-app:build:development",
+              "serveTarget": "ticket-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
