@@ -2,19 +2,19 @@
 
 Hi Everyone at Visory, I created this app in Angular, so it is a default angular app. I tried not use any viusal library and focused more on the requirements. Here is the full app.
 
-# Setup
+## Setup
 
 npm install
 
-# running
+## Running
 
 npm run start
 
-# testing
+## Testing
 
 npm run test
 
-# live app
+## Live app
 
 Also the live version is avaliable at: https://ticket-app-7a725.web.app/
 
