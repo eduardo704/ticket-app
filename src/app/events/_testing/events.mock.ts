@@ -11580,3 +11580,146 @@ export const mockResponse = {
     number: 0,
   },
 };
+
+export const mockMapped = [
+  {
+    name: 'Minnesota Timberwolves vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/c70/98044e71-9085-471b-9f21-78525c745c70_1340061_RECOMENDATION_16_9.jpg',
+    date: '2024-04-14T19:30:00Z',
+    locationName: 'Target Center',
+  },
+  {
+    name: 'Charlotte Hornets vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/236/d381735d-e40d-44c2-9055-91cc0038e236_1340151_RECOMENDATION_16_9.jpg',
+    date: '2024-03-15T23:00:00Z',
+    locationName: 'Spectrum Center ',
+  },
+  {
+    name: 'Milwaukee Bucks vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/0b3/b24190d1-e7d1-4435-81b4-f45b5943b0b3_1339891_RETINA_LANDSCAPE_16_9.jpg',
+    date: '2024-03-17T17:00:00Z',
+    locationName: 'Fiserv Forum',
+  },
+  {
+    name: 'Oklahoma City Thunder vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/64d/149d3f0b-cd16-4b25-9567-373cbf96b64d_1339861_RECOMENDATION_16_9.jpg',
+    date: '2024-03-30T00:00:00Z',
+    locationName: 'Paycom Center',
+  },
+  {
+    name: 'Phoenix Suns vs. Oklahoma City Thunder',
+    image:
+      'https://s1.ticketm.net/dam/a/c62/0636ff21-e369-4b8c-bee4-214ea0a81c62_1339761_CUSTOM.jpg',
+    date: '2024-03-04T02:30:00Z',
+    locationName: 'Footprint Center',
+  },
+  {
+    name: 'New Orleans Pelicans vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/b1c/4be191e2-6357-433c-a421-aa1ffb2e8b1c_1340051_EVENT_DETAIL_PAGE_16_9.jpg',
+    date: '2024-04-02T00:00:00Z',
+    locationName: 'Smoothie King Center',
+  },
+  {
+    name: 'San Antonio Spurs vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/455/612b13a2-822a-4cda-9920-098692170455_TABLET_LANDSCAPE_16_9.jpg',
+    date: '2024-03-24T00:00:00Z',
+    locationName: 'Frost Bank Center',
+  },
+  {
+    name: 'Phoenix Suns vs. New Orleans Pelicans',
+    image:
+      'https://s1.ticketm.net/dam/a/c62/0636ff21-e369-4b8c-bee4-214ea0a81c62_1339761_CUSTOM.jpg',
+    date: '2024-04-07T22:00:00Z',
+    locationName: 'Footprint Center',
+  },
+  {
+    name: 'Phoenix Suns vs. Minnesota Timberwolves',
+    image:
+      'https://s1.ticketm.net/dam/a/c62/0636ff21-e369-4b8c-bee4-214ea0a81c62_1339761_CUSTOM.jpg',
+    date: '2024-04-06T02:00:00Z',
+    locationName: 'Footprint Center',
+  },
+  {
+    name: 'Phoenix Suns vs. Atlanta Hawks',
+    image:
+      'https://s1.ticketm.net/dam/a/c62/0636ff21-e369-4b8c-bee4-214ea0a81c62_1339761_CUSTOM.jpg',
+    date: '2024-03-22T02:30:00Z',
+    locationName: 'Footprint Center',
+  },
+  {
+    name: 'San Antonio Spurs vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/455/612b13a2-822a-4cda-9920-098692170455_TABLET_LANDSCAPE_16_9.jpg',
+    date: '2024-03-26T00:00:00Z',
+    locationName: 'Frost Bank Center',
+  },
+  {
+    name: 'Sacramento Kings vs. Phoenix Suns',
+    image:
+      'https://s1.ticketm.net/dam/a/022/6fdae8b5-6fa8-4793-8829-edef2a77a022_1339671_RETINA_PORTRAIT_3_2.jpg',
+    date: '2024-04-13T02:30:00Z',
+    locationName: 'Golden 1 Center',
+  },
+  {
+    name: 'Milwaukee Bucks vs Phoenix Suns (Premium Spaces)',
+    image:
+      'https://s1.ticketm.net/dam/a/0b3/b24190d1-e7d1-4435-81b4-f45b5943b0b3_1339891_RETINA_LANDSCAPE_16_9.jpg',
+    date: '2024-03-17T17:00:00Z',
+    locationName: 'Fiserv Forum',
+  },
+  {
+    name: 'LA Clippers vs. Los Angeles Lakers',
+    image:
+      'https://s1.ticketm.net/dam/a/518/971b3e12-b253-4f8a-9896-874192c51518_1340071_TABLET_LANDSCAPE_16_9.jpg',
+    date: '2024-02-29T03:00:00Z',
+    locationName: 'Crypto.com Arena',
+  },
+  {
+    name: 'U2:UV Achtung Baby Live At Sphere - General Admission Floor',
+    image:
+      'https://s1.ticketm.net/dam/a/d3e/8de85b2b-e7ac-4130-8e57-bb927919ed3e_RETINA_PORTRAIT_16_9.jpg',
+    date: '2024-02-18T04:00:00Z',
+    locationName: 'Sphere',
+  },
+  {
+    name: 'U2:UV Achtung Baby Live At Sphere - General Admission Floor',
+    image:
+      'https://s1.ticketm.net/dam/a/d3e/8de85b2b-e7ac-4130-8e57-bb927919ed3e_RETINA_PORTRAIT_16_9.jpg',
+    date: '2024-03-03T04:00:00Z',
+    locationName: 'Sphere',
+  },
+  {
+    name: 'U2:UV Achtung Baby Live At Sphere - General Admission Floor',
+    image:
+      'https://s1.ticketm.net/dam/a/d3e/8de85b2b-e7ac-4130-8e57-bb927919ed3e_RETINA_PORTRAIT_16_9.jpg',
+    date: '2024-02-19T04:00:00Z',
+    locationName: 'Sphere',
+  },
+  {
+    name: 'Los Angeles Dodgers vs. Los Angeles Angels',
+    image:
+      'https://s1.ticketm.net/dam/a/eb3/9ec01308-9d94-4413-92e2-8d0dc9fe8eb3_RECOMENDATION_16_9.jpg',
+    date: '2024-03-24T23:10:00Z',
+    locationName: 'Dodger Stadium',
+  },
+  {
+    name: 'P!NK: Summer Carnival 2024',
+    image:
+      'https://s1.ticketm.net/dam/a/8cc/0850a9c7-f269-4506-87f5-0acb3e2e08cc_CUSTOM.jpg',
+    date: '2024-08-21T22:30:00Z',
+    locationName: 'Gillette Stadium',
+  },
+  {
+    name: 'U2:UV Achtung Baby Live At Sphere - General Admission Floor',
+    image:
+      'https://s1.ticketm.net/dam/a/d3e/8de85b2b-e7ac-4130-8e57-bb927919ed3e_RETINA_PORTRAIT_16_9.jpg',
+    date: '2024-03-02T04:00:00Z',
+    locationName: 'Sphere',
+  },
+];

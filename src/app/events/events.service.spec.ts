@@ -25,7 +25,6 @@ describe('EventsService', () => {
     expect(service).toBeTruthy();
 
     service.getEvents({ countryCode: 'US' }).subscribe((events) => {
-      console.log(test)
       expect(events.length).toEqual(20);
       const event = events[0];
       expect(event.image).toEqual('mockIMgUrl');

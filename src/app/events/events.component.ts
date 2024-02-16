@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { DateTime } from 'luxon';
-import { Observable, Subscription, take } from 'rxjs';
+import { Observable, Subscription, take, tap } from 'rxjs';
 import { CountriesService } from '../common/services/countries.service';
 import { Country } from './country.model';
 import { MappedEvent } from './events.model';
@@ -49,8 +49,6 @@ export class EventsComponent implements OnInit, OnDestroy {
 
     const start = this.getFormatedDate(val.startDateTime);
     const end = this.getFormatedDate(val.endDateTime);
-
-    console.log(start);
 
     this.getNewEvents({
       ...val,
